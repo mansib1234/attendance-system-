@@ -15,120 +15,86 @@
           "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
           "Source Han Sans CN", sans-serif;
       }
-      
+      /* Container & Layout */
       .main-container {
-        overflow: hidden;
-        position: relative;
-        width: 1512px;
-        height: 942px;
+        width: 100%;
+        max-width: 1512px;
         margin: 0 auto;
         background: #ffffff;
-      }
-      
-      .frame {
-        position: absolute;
-        width: 1512px;
-        height: 983px;
-        top: 50%;
-        left: 50%;
-        background: #ffedec;
-        transform: translate(-50%, -50.05%);
-        border-radius: 78px;
-        box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
-      }
-      
-      .employee-details {
-        display: block;
-        position: absolute;
-        top: 14px;
-        left: calc(50% - 358px);
-        color: #000000;
-        font-family: Dongle, var(--default-font-family);
-        font-size: 128px;
-        font-weight: 700;
-        line-height: 185px;
-        white-space: nowrap;
-        z-index: 1;
-      }
-      
-      .frame-1 {
-        position: absolute;
-        width: 777px;
-        height: 788px;
-        top: 163px;
-        left: 50%;
-        transform: translate(-49.94%, 0);
-        z-index: 2;
         overflow: hidden;
-        border-radius: 99px;
+        padding: 20px;
       }
-      
-      .ellipse {
+      .frame {
+        width: 100%;
+        max-width: 1512px;
+        background: #ffedec;
+        border-radius: 78px;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+        margin: 0 auto;
+        padding: 20px;
         position: relative;
+      }
+      .employee-details {
+        font-family: Dongle, var(--default-font-family);
+        color: #000;
+        font-size: 64px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .frame-1 {
+        width: 90%;
+        max-width: 777px;
+        margin: 20px auto;
+        background: #fff;
+        border-radius: 99px;
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+      }
+      .ellipse {
         width: 300px;
         height: 300px;
-        margin: 36px 0 0 239px;
+        margin: 0 auto 20px;
         background: url(https://static.codia.ai/image/2025-03-04/cb938780-dccb-4d12-b437-006707d7875a.png)
           no-repeat center;
         background-size: cover;
         border-radius: 50%;
       }
-      
       .name-manu,
       .role-sde-intern,
       .employee-id,
       .date-and-time {
-        display: block;
-        position: relative;
-        color: #000000;
         font-family: Dongle, var(--default-font-family);
+        color: #000;
         font-weight: 700;
-        white-space: nowrap;
+        text-align: center;
+        margin: 10px 0;
       }
-      
       .name-manu {
-        height: 58px;
-        margin: 12px 0 0 308px;
-        font-size: 40px;
-        line-height: 57.92px;
+        font-size: 24px;
       }
-      
       .role-sde-intern {
-        height: 58px;
-        margin: 0 0 0 289px;
-        font-size: 40px;
-        line-height: 57.92px;
+        font-size: 24px;
       }
-      
       .employee-id {
-        height: 58px;
-        margin: 0 0 0 270px;
-        font-size: 40px;
-        line-height: 57.92px;
+        font-size: 24px;
       }
-      
       .date-and-time {
-        height: 58px;
-        margin: 0 0 0 293px;
-        font-size: 40px;
-        line-height: 57.92px;
+        font-size: 24px;
       }
-      
-      /* Updated date and time input styling */
+      /* Date & Time Input */
       .frame-2 {
-        position: relative;
-        width: 337px;
-        height: 50px;
-        margin: 0 0 0 220px;
-        background: #ffffff;
-        border: 1px solid #000000;
+        width: 80%;
+        max-width: 337px;
+        margin: 20px auto;
+        background: #fff;
+        border: 1px solid #000;
         border-radius: 13px;
-        overflow: hidden;
         display: flex;
         align-items: center;
         padding: 0 10px;
       }
-      
       input.date-picker,
       input.time-picker {
         border: none;
@@ -138,106 +104,88 @@
         color: #6e6e6e;
         background: transparent;
       }
-      
       input.date-picker {
         width: 60%;
       }
-      
       input.time-picker {
         width: 35%;
         margin-left: 5%;
       }
-      
-      .calendar-lines-svgrepo-com {
-        width: 25px;
-        height: 25px;
-        background: url(https://static.codia.ai/image/2025-03-04/04272738-1999-4d43-bcfd-7acef2419499.svg)
-          no-repeat center;
-        background-size: cover;
-      }
-      
-      /* Updated radio button group styling */
       .flex-row-db {
-        position: relative;
-        margin: 21px 0 0 220px;
+        width: 80%;
+        margin: 20px auto;
         display: flex;
-        gap: 30px;
-        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
       }
-      
       .check-option {
         font-family: Dongle, var(--default-font-family);
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 700;
         color: #000;
+        margin: 10px;
       }
-      
-      .check-option input {
-        margin-right: 8px;
-      }
-      
-      .frame-5 {
-        position: relative;
-        width: 337px;
-        height: 50px;
-        margin: 20px 0 0 220px;
+      /* Save Button */
+      .button {
+        width: 80%;
+        max-width: 403px;
+        margin: 20px auto;
         background: #af6fc7;
-        border: 1px solid #000000;
-        border-radius: 13px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 403px;
-        height: 50px;
-        left: 180px;
-        cursor: pointer;
-        background: #af6fc7;
-        box-shadow: 5px 7px 4px;
-        border: 1px solid #000000;
+        border: 1px solid #000;
         border-radius: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
       }
       .save {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: absolute;
-        height: 32px;
-        top: 10px;
-        left: 174px;
-        color: #ffffff;
+        color: #fff;
         font-family: Inter, var(--default-font-family);
         font-size: 24px;
         font-weight: 400;
-        line-height: 29.045px;
-        text-align: left;
-        white-space: nowrap;
-        z-index: 2;
+        text-align: center;
+      }
+      /* Responsive Adjustments */
+      @media (max-width: 480px) {
+        .employee-details {
+          font-size: 32px;
+        }
+        .name-manu,
+        .role-sde-intern,
+        .employee-id,
+        .date-and-time {
+          font-size: 18px;
+        }
+        input.date-picker,
+        input.time-picker {
+          font-size: 16px;
+        }
+        .check-option {
+          font-size: 18px;
+        }
+        .button {
+          width: 90%;
+        }
       }
     </style>
   </head>
   <body>
     <div class="main-container">
       <div class="frame">
-        <span class="employee-details">EMPLOYEE DETAILS</span>
+        <div class="employee-details">EMPLOYEE DETAILS</div>
         <div class="frame-1">
           <div class="ellipse"></div>
-          <span class="name-manu">Name : manu</span>
-          <span class="role-sde-intern">Role : SDE Intern</span>
-          <span class="employee-id">Employee ID : 12345</span>
-          <span class="date-and-time">Date and Time :</span>
-          <!-- Date and Time input fields -->
+          <div class="name-manu">Name : manu</div>
+          <div class="role-sde-intern">Role : SDE Intern</div>
+          <div class="employee-id">Employee ID : 12345</div>
+          <div class="date-and-time">Date and Time :</div>
+          <!-- Date and Time Inputs -->
           <div class="frame-2">
             <input type="date" class="date-picker" />
             <input type="time" class="time-picker" />
           </div>
-          <!-- Radio buttons for Check In and Check Out -->
+          <!-- Radio Buttons -->
           <div class="flex-row-db">
             <label class="check-option">
               <input type="radio" name="attendance" value="checkin" /> Check In
@@ -246,9 +194,10 @@
               <input type="radio" name="attendance" value="checkout" /> Check Out
             </label>
           </div>
-          <button class="button">
+          <!-- Save Button -->
+          <div class="button">
             <span class="save">Save</span>
-          </button>
+          </div>
         </div>
       </div>
     </div>
